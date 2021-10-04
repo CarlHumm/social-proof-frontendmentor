@@ -1,0 +1,56 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-bottom:1rem;
+    &__title {
+        max-width: 12ch;
+        text-align:center;
+        letter-spacing:-1px;
+    }
+
+    &__copy {
+        text-align:center;
+        color: var(--secondary);
+        max-width:40ch;
+        font-weight:500;
+    }
+}
+
+
+
+@media screen and (min-width:700px) {
+
+    .intro {
+        &__title {
+            margin-top:0;
+        }
+    }
+
+    .ratings {
+        &__list {
+            margin-top: 0;
+        }
+    }
+    
+}
+
+
+
+
+@media screen and (min-width: 1024px) {
+    .intro {
+        align-items:flex-start;
+        margin-right:2rem;
+        margin-bottom:7rem;
+        flex: 1;
+        &__title {
+            text-align:Left;
+            max-width:12ch;
+        }
+
+        &__copy {
+            text-align:left;
+        }
+    }
+}

@@ -1,0 +1,116 @@
+
+
+
+.ratings {
+    margin-bottom:2rem;
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+        padding:1.25rem 1.5rem;
+        background-color: var(--grey);
+        border-radius:10px;
+        margin-bottom:1rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__stars {
+        display:flex;
+        justify-content:center;
+    }
+
+    &__copy {
+        margin: 0.5rem 0 0 0;
+        font-weight: var(--fw-bold);
+        color: var(--primary);
+    }
+
+    &__star {
+        margin-right:0.5rem;
+    }
+}
+
+
+@media screen and (min-width:600px) {
+
+    .ratings {
+
+        &__list {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__card {
+            flex-direction: row;
+            justify-content:center;
+            padding:1.25rem 2.5rem;
+    
+        }
+
+        &__stars {
+            margin-right: 1rem;
+            margin-top:4px;
+        }
+    }
+    
+}
+
+
+@media screen and (min-width:700px) {
+
+    .ratings {
+
+        &__list {
+            align-items: center;
+        }
+
+        &__card {
+            width:450px;
+            justify-content:flex-start;
+        }
+    }
+    
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
+    .ratings {
+        flex: 1;
+        &__list {
+            flex: 1;
+            align-items:flex-end;
+        }
+        &__card {
+            position:relative;
+            &:nth-child(1) {
+                left: -6rem;
+            }
+            &:nth-child(2) {
+                left: -3rem;
+            }
+            &:nth-child(3) {
+                left: 0;
+            }
+        }
+    }
+}
+
+
+
+// Inconsistency in sizing from mobile to desktop.
+/*
+
+rATINGS AND TESTIMONIAL CARDS GET BIG WHEN scaling but then revert to small max widths and then enlarge again.
+They jump around abit, it's chaotic. Instead of adapting try have them seamlessly meet the max widths and just re-organise around
+that, or whatever.
+
+*/

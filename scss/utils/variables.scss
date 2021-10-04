@@ -1,0 +1,30 @@
+:root {
+
+    // Colours
+    --primary: hsl(300, 43%, 22%); 
+    --secondary: hsl(303, 10%, 53%);
+    --accent: hsl(333, 80%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(300, 24%, 96%);
+
+
+    // Font - Family
+    --ff-base: 'Spartan', sans-serif;
+
+    // Font - Sizes
+    --fs-base: 0.9375rem;
+    --fs-title: clamp(2rem, 4.9vw, 4rem);
+
+
+    // Font - Weights
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+
+
+    // Containers
+    --mw-desktop: 1440px;
+    --mw-tablet: 960px;
+
+
+}

@@ -1,0 +1,97 @@
+@use '../utils/variables.scss' as b;
+
+
+.testimonials {
+    display: flex;
+    flex-flow: column;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+
+    .testimonial {
+        background-color: var(--primary);
+        padding:4rem;
+        margin: 0;
+        border-radius: 10px;
+        margin-bottom: 1.5rem;
+        display:flex;
+        flex-direction: column;
+        flex: 1;
+        min-width:325px;
+        max-width: 450px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+
+
+        &__author {
+            display: flex;
+        }
+
+
+        &__details {
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+            margin-left:1.5rem;
+        }
+        &__avatar {
+            width:45px;
+            border-radius:50%;
+        }
+
+        &__name {
+            font-style: normal;
+            font-weight:var(--fw-bold);
+            color: var(--white);
+        }
+
+        &__status {
+            color: var(--accent);
+            margin-top:0.25rem;
+            font-size:1rem;
+        }
+
+        &__copy {
+            margin: 1.5rem 0 0 0;
+            color: var(--white);
+        }
+    }
+}
+
+@media screen and (min-width:700px) {
+    .testimonials {
+        flex-flow: row wrap;
+        .testimonial {
+            margin-right:1.5rem;
+
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .testimonials {
+        justify-content:flex-start;
+        .testimonial {
+            max-width: 450px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .testimonials {
+        
+        .testimonial {
+            position:relative;
+            &:nth-child(2) {
+                top: 3rem;
+            }
+            &:nth-child(3) {
+                top: 6rem;
+                margin-right: 0;
+            }
+        }
+    }
+}

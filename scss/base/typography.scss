@@ -1,0 +1,20 @@
+
+
+
+body {
+    font-family: var(--ff-base);
+}
+
+
+h1 {
+    font-size: var(--fs-title);
+    font-weight: var(--fw-bold);
+    color: var(--primary);
+    line-height:1;
+    margin-bottom:0.5rem;
+}
+
+p, blockquote {
+    font-size: var(--fs-base);
+    line-height:1.5rem;
+}

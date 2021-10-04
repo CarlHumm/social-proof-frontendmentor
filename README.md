@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/CarlHumm/social-proof-frontendmentor]
+- Solution URL: [https://www.frontendmentor.io/solutions/social-proof-section-htmlcss-vThVBD2Cs]
 - Live Site URL: [https://carlhumm.github.io/social-proof-frontendmentor/]
 
 

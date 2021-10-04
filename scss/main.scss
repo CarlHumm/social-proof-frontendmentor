@@ -68,8 +68,7 @@ a {
         flex-flow: row wrap;
         justify-content:space-between;
         width:100%;
-        max-width: 1440px;
-        padding: 0;
+        max-width: 1280px;
     }
 
 
@@ -80,9 +79,12 @@ a {
 }
 
 
-
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
     body {
+        padding: 0;
+    }
+
+    .social-proof {
         padding: 0;
     }
 }
